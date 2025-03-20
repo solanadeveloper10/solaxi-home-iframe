@@ -707,6 +707,26 @@
 
 <body
     class="home page-template-default page page-id-10 logged-in admin-bar no-customize-support wp-embed-responsive theme-default elementor-default elementor-kit-6 elementor-page elementor-page-10">
+    <style>
+        /* Add to the iframe website's CSS (solaxi-home-iframe.vercel.app) */
+        html {
+            scrollbar-width: none !important;
+            -ms-overflow-style: none !important;
+            overflow-y: scroll !important;
+        }
+
+        body {
+            scrollbar-width: none !important;
+            -ms-overflow-style: none !important;
+            overflow-y: scroll !important;
+        }
+
+        ::-webkit-scrollbar {
+            display: none !important;
+            width: 0 !important;
+        }
+    </style>
+
     <script>
         (function () {
             var request, b = document.body, c = 'className', cs = 'customize-support', rcs = new RegExp('(^|\\s+)(no-)?' + cs + '(\\s+|$)');
